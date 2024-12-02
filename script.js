@@ -36,3 +36,27 @@ myLibrary.forEach((book) => {
 
   libraryDiv.appendChild(bookCard);
 });
+
+const newBookButton = document.querySelector("#add-book");
+const newBookForm = document.querySelector("#book-form");
+
+newBookButton.addEventListener("click", () => {
+  newBookForm.classList.toggle("hidden");
+})
+
+const addBookButton = document.querySelector("#add-button");
+
+addBookButton.addEventListener("click", (event) => {
+  event.preventDefault();
+
+  const titleInput = document.querySelector("#title");
+  const authorInput = document.querySelector("#author");
+  const pagesInput = document.querySelector("#pages");
+  const readInput = document.querySelector("#read");
+
+  addBookToLibrary(titleInput.value, authorInput.value, Number(pagesInput.value), (readInput.value === "on" ? true : false));
+});
+
+function updateUI() {
+  const bookCard = document.createElement("div");
+}

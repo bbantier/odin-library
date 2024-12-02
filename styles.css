@@ -1,4 +1,6 @@
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -43,4 +45,32 @@ body {
   border: none;
   border-radius: 15px;
   box-shadow: 0 10px 15px 0 #bfbfbf;
+}
+
+.book-form {
+  margin-top: 25px;
+  padding: 25px;
+  border: 1px solid #dfdfdf;
+  border-radius: 25px;
+}
+
+.book-form input {
+  margin-bottom: 15px;
+}
+
+.book-form input[type="text"],
+.book-form input[type="number"] {
+  padding: 2px;
+  font-size: 1.2rem;
+  border: 1px solid #dfdfdf;
+}
+
+.book-form .form-label {
+  display: block;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.hidden {
+  display: none;
 }

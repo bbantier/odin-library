@@ -8,25 +8,25 @@
     <script src="script.js" defer></script>
   </head>
   <body>
-    <button class="new-book">Add New Book</button>
-    <form action="" class="book-form hidden">
+    <button type="button" id="add-book" class="new-book">Add New Book</button>
+    <form action="" id="book-form" class="book-form hidden">
       <p>
-        <label class="form-label" for="title">Title</label>
-        <input type="text" id="title" />
+        <label class="form-label" for="title" aria-required="true">Title</label>
+        <input type="text" id="title" name="title" required />
       </p>
       <p>
         <label class="form-label" for="author">Author</label>
-        <input type="text" id="author" />
+        <input type="text" id="author" name="author" />
       </p>
       <p>
         <label class="form-label" for="pages">Pages</label>
-        <input type="number" id="pages" />
+        <input type="number" id="pages" name="pages" />
       </p>
       <p>
         <label class="form-label" for="read">Read</label>
-        <input type="checkbox" id="read" />
+        <input type="checkbox" id="read" name="read" />
       </p>
-      <button type="submit">Add</button>
+      <button id="add-button" class="new-book" type="submit">Add</button>
     </form>
     <div id="library"></div>
   </body>
