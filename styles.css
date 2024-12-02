@@ -1,0 +1,46 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: "Helvetica", "Tahoma", "Arial", sans-serif;
+}
+
+body {
+  padding: 25px;
+}
+
+#library {
+  margin-top: 25px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 25px;
+}
+
+.book-card {
+  padding: 20px;
+  border: 1px solid #dfdfdf;
+  border-radius: 25px;
+  box-shadow: 0 10px 15px 0 #bfbfbf;
+}
+
+.book-card > * {
+  text-align: center;
+}
+
+.book-card > h2 {
+  padding-bottom: 5px;
+  margin-bottom: 5px;
+  border-bottom: 1px solid #dfdfdf;
+}
+
+.new-book {
+  background-color: #87b820;
+  color: white;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 10px 15px 0 #bfbfbf;
+}
